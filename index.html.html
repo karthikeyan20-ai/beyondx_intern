@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: lightgrey;
+  text-transform: uppercase;
+  text-shadow: 2px 2px red;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 750px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 50px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 50px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: white;
+  height: 300px; /* only for demonstration, should be removed */
+  letter-spacing: 2px;
+
+  
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Artificial Intelligence</h2>
+  <h5>what it is and why it matters</h5>
+  
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li><br>
+      <li><a href="#">Basics</a></li><br>
+      <li><a href="#">Applications</a></li><br>
+	  <li><a href="#">History</a></li><br>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>What is AI?</h1>
+    <p>Artificial intelligence (AI) is wide-ranging branch of computer science concerned with building smart machines capable of performing tasks that typically require human intelligence. AI is an interdisciplinary science with multiple approaches, but advancements in machine learning and deep learning are creating a paradigm shift in virtually every sector of the tech industry. </p>
+    <h1>Examples of AI in real life</h1>
+    <p><ul>
+    <li>AI google assistant and Siri</li>
+    <li>Email spam filter</li>
+    <li>Ridesharing autos like uber</li>
+    <li>social media applications like facebook and instgram</li></p>
+	<h1>What are the different types of AI</h1>
+	<p>At a very high level artificial intelligence can be split into two broad types: narrow AI and general AI.
+
+       Narrow AI is what we see all around us in computers today: intelligent systems that have been taught or learned how to carry out specific tasks without being explicitly programmed how to do so.
+
+       This type of machine intelligence is evident in the speech and language recognition of the Siri virtual assistant on the Apple iPhone, in the vision-recognition systems on self-driving cars, in the recommendation engines that suggest products you might like based on what you bought in the past. Unlike humans, these systems can only learn or be taught how to do specific tasks, which is why they are called narrow AI.</p>
+   	<h1>Which AI services are available</h1>
+	<p>All of the major cloud platforms -- Amazon Web Services, Microsoft Azure and Google Cloud Platform -- provide access to GPU arrays for training and running machine learning models, with Google also gearing up to let users use its Tensor Processing Units -- custom chips whose design is optimized for training and running machine-learning models.
+
+All of the necessary associated infrastructure and services are available from the big three, the cloud-based data stores, capable of holding the vast amount of data needed to train machine-learning models, services to transform data to prepare it for analysis, visualisation tools to display the results clearly, and software that simplifies the building of models.
+
+These cloud platforms are even simplifying the creation of custom machine-learning models, with Google recently revealing a service that automates the creation of AI models, called Cloud AutoML. This drag-and-drop service builds custom image-recognition models and requires the user to have no machine-learning expertise.
+
+Cloud-based, machine-learning services are constantly evolving, and at the start of 2018, Amazon revealed a host of new AWS offerings designed to streamline the process of training up machine-learning models.</p>
+  </article>
+</section>
+</body>
+</html>
